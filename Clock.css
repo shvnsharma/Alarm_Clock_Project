@@ -1,0 +1,119 @@
+body{
+    background-image: url("./clock_wallpaper.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(245, 193, 126);
+}
+/* div{
+    border: 2px solid black;
+} */
+
+#alarm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    width: 500px;
+    left: 500px;
+}
+
+.clock h1{
+    font-size: 80px;
+    display: inline;
+}
+
+.clock span{
+    position: relative;
+    top: -40px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.clock, .set_alarm, #btns{
+    margin: 20px;
+}
+
+.set_alarm input{
+    height: 30px;
+    width: 200px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.set_alarm select{
+    height: 20px;
+    width: 50px;
+}
+
+#btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+    background-color: chocolate;
+    color: bisque;
+}
+
+.alarm_list{
+    width: 500px;
+}
+
+.alarm_list h2{
+    color: bisque;
+    text-align: center;
+    text-decoration: underline chocolate;
+}
+
+.alarm_contents{
+    display: flex;
+    justify-content: space-around;
+}
+
+.alarm_contents span{
+    font-size: 25px;
+    color: bisque;
+}
+
+@keyframes changeDirection {
+    0%{
+        transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(0deg)
+    }
+
+    75%{
+        transform: rotate(25deg);
+    }
+
+    100%{
+        transform: rotate(50deg);
+    }
+
+    
+}
+
+i{
+    position: relative;
+    top: 5px;
+    animation-name: changeDirection;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    /* setting point of motion-rotation */
+    transform-origin: -20% -20%;
+    transition-timing-function:  ease-in-out;
+    animation-direction: alternate;
+}
+

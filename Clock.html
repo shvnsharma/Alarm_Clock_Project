@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="Clock.css" type="text/css">
+    <script src="https://kit.fontawesome.com/4c6d7e97a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="alarm">
+        <div class="clock">
+            <h1></h1>
+            <span id="time_format">AM</span>
+        </div>
+        <div class="set_alarm">
+            <input type="text" placeholder="hh:mm:ss">
+            <select id="alarm_time_format">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            <div id="btns">
+                <button id="set">Set</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+        <div class="alarm_list">
+            <h2>Alarm</h2>
+             <!-- <div class="alarm_contents">
+                <span>1:00:01 AM</span>
+                <i class="fa-solid fa-bell" style="color: bisque;"></i>
+                <button>Cancel</button>
+            </div> -->
+        </div>
+    </div>
+    <script src="Clock.js"></script>
+</body>
+</html>
